@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front End Web Developer available for freelance work. I make websites using HTML, CSS and JavaScript."
+    />
+    <title>Kamil Ruśniak - Front End Web Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <p id="top-scroll"></p>
+    <img src="img/svg/bg-purple-left.svg" alt="" class="bg-left" />
+    <img src="img/svg/bg-purple-left.svg" alt="" class="bg-right" />
+    <img src="img/svg/bg-center.svg" alt="" class="bg-center" />
+
+    <div role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#top-scroll"><li>Home</li></a>
+          <a href="#projects"><li>My Work</li></a>
+          <a href="#about"><li>About me</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <p>Kamil Ruśniak</p>
+      <ul>
+        <li><a href="#top-scroll" class="button">Home</a></li>
+        <li><a href="#projects" class="button">My Work</a></li>
+        <li><a href="#about" class="button">About me</a></li>
+        <li><a href="#contact" class="button">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="home">
+      <p>Hi, I'm Kamil Ruśniak</p>
+      <h1>Front End Web Developer</h1>
+
+      <p class="projects-text">Take a look at my projects</p>
+      <a class="arrow-button" href="#projects"
+        ><i class="far fa-arrow-alt-circle-down arrow-icon"></i
+      ></a>
+    </div>
+
+    <div id="projects">
+      <div class="project-card">
+        <h2>Example Web Solutions</h2>
+        <div class="project-card-inner">
+          <img
+            class="img-hover-shadow"
+            src="img/preview-websolutions/previev-1-medium.png"
+            alt="Preview of my Web Solutions Company website displayed on different devices"
+          />
+
+          <p>
+            It's a fictional website I designed and built to practice HTML and
+            CSS. I also used some basic JavaScript to display hamburger menu on
+            smaller screens.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <a
+              href="https://web-services-concept.netlify.app"
+              target="_blank"
+              class="button"
+              >WEBSITE</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kamil-rusniak/Web-Services-Company-Concept"
+              target="_blank"
+              class="button"
+              >CODE</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h2>FloRyś</h2>
+        <div class="project-card-inner">
+          <img
+            src="img/preview-florist/previev-1-medium.png"
+            alt="Preview of my website for local florist displayed on different devices"
+          />
+          <p>
+            I designed and created this responsive website for local florist. I
+            used HTML, CSS and a bit of JS. There is a main page and 5 subpages.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <a href="http://www.florys.eu" target="_blank" class="button"
+              >WEBSITE</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kamil-rusniak/"
+              target="_blank"
+              class="button"
+              >CODE</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="about">
+      <h2>About me</h2>
+      <p>
+        Hello, my name is Kamil Ruśniak. I'm Front End Web Developer located in
+        Poland. I love learning and turning ideas into unique websites. Good
+        website is a one time expense that will increase your monthly profits.
+      </p>
+      <p>My skill set</p>
+
+      <div class="skill-container">
+        <img src="img/svg/html.svg" alt="HTML icon" />
+        <img src="img/svg/css.svg" alt="CSS icon" />
+        <img src="img/svg/js.svg" alt="JavaScript icon" />
+        <img src="img/svg/git.svg" alt="Git icon" />
+        <img src="img/svg/rwd.svg" alt="Responsive Web Design icon" />
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-inner-container">
+        <div class="contact-form-container">
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" placeholder="John Doe" name="" id="" />
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="johndoe@mail.com" name="" id="" />
+
+            <label for="name">Message</label>
+            <textarea placeholder="..." name="" id=""></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </div>
+
+        <div class="contact-info-container">
+          <div class="contact-info-inner">
+            <a href="mailto:kamil.rusniak01@gmail.com"
+              ><i class="far fa-envelope contact-info-icon"></i
+            ></a>
+            <a class="contact-info-text" href="mailto:kamil.rusniak01@gmail.com"
+              >kamil.rusniak01@gmail.com</a
+            >
+          </div>
+
+          <div class="contact-info-inner">
+            <a href="https://github.com/kamil-rusniak" target="_blank"
+              ><i class="fab fa-github contact-info-icon"></i
+            ></a>
+            <a
+              href="https://github.com/kamil-rusniak"
+              target="_blank"
+              class="contact-info-text"
+              >github.com/kamil-rusniak</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="copyright">
+        Copyright &copy; <span id="data"></span> Kamil Ruśniak
+      </p>
+    </footer>
+
+    <script>
+      var d = new Date();
+      document.getElementById("data").innerHTML = d.getFullYear();
+    </script>
+  </body>
+</html>
