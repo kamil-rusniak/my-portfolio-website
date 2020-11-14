@@ -23,26 +23,12 @@
 
     <div role="navigation">
       <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
         <input type="checkbox" />
 
-        <!--
-        Some spans to act as a hamburger.
-        
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
         <span></span>
         <span></span>
         <span></span>
 
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
         <ul id="menu">
           <a href="#top-scroll"><li>Home</li></a>
           <a href="#projects"><li>My Work</li></a>
@@ -143,9 +129,10 @@
     <div id="about">
       <h2>About me</h2>
       <p>
-        Hello, my name is Kamil Ruśniak. I'm Front End Web Developer located in
-        Poland. I love learning and turning ideas into unique websites. Good
-        website is a one time expense that will increase your monthly profits.
+        Hello, my name is Kamil Ruśniak. I'm a Front End Web Developer located
+        in Poland. I love learning and turning ideas into unique websites. Good
+        website is a one time expense that will help your business in the long
+        term.
       </p>
       <p>My skill set</p>
 
@@ -163,12 +150,12 @@
 
       <div class="contact-inner-container">
         <div class="contact-form-container">
-          <form action="">
+          <form name="contact" method="POST" data-netlify="true">
             <label for="name">Name</label>
-            <input type="text" placeholder="John Doe" name="" id="" />
+            <input type="text" placeholder="John Doe" name="name" />
 
             <label for="email">Email</label>
-            <input type="email" placeholder="johndoe@mail.com" name="" id="" />
+            <input type="email" placeholder="johndoe@mail.com" name="email" />
 
             <label for="name">Message</label>
             <textarea placeholder="..." name="" id=""></textarea>
