@@ -98,11 +98,12 @@ ul {
 }
 
 .button-navbar {
-  transition: box-shadow 0.4s linear;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.6s linear;
 }
 
 .button-navbar:hover {
-  box-shadow: 0px 1px 0px 0px #fff;
+  border-color: #fff;
 }
 
 .bg-left {
