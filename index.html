@@ -27,7 +27,7 @@
 
         <span></span>
         <span></span>
-        <span></span> 
+        <span></span>
 
         <ul id="menu">
           <li><a href="#home">Home</a></li>
@@ -40,12 +40,13 @@
 
     <div class="navbar">
       <p>Kamil Ruśniak</p>
-      <ul>
-        <li><a href="#home" class="button">Home</a></li>
-        <li><a href="#projects" class="button">My Work</a></li>
-        <li><a href="#about" class="button">About me</a></li>
-        <li><a href="#contact" class="button">Contact</a></li>
+      <ul id="navbar-list">
+        <li><a href="#home" class="button button-navbar">Home</a></li>
+        <li><a href="#projects" class="button button-navbar">My Work</a></li>
+        <li><a href="#about" class="button button-navbar">About me</a></li>
+        <li><a href="#contact" class="button button-navbar">Contact</a></li>
       </ul>
+      <p class="invisible">Kamil Ruśniak</p>
     </div>
 
     <div id="home-section">
@@ -154,50 +155,61 @@
 
     <div id="contact">
       <div class="contact">
-      <h2>Contact</h2>
+        <h2>Contact</h2>
 
-      <div class="contact-inner-container">
-        <div class="contact-form-container">
-          <form name="contact" method="POST" data-netlify="true">
-            <label for="name">Name</label>
-            <input type="text" placeholder="John Doe" id="name" name="name" />
+        <div class="contact-inner-container">
+          <div class="contact-form-container">
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="name">Name</label>
+              <input type="text" placeholder="John Doe" id="name" name="name" />
 
-            <label for="email">Email</label>
-            <input type="email" placeholder="johndoe@mail.com" id="email" name="email" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="johndoe@mail.com"
+                id="email"
+                name="email"
+              />
 
-            <label for="message">Message</label>
-            <textarea placeholder="..." name="message" id="message"></textarea>
-            <input type="submit" value="SUBMIT" />
-          </form>
-        </div>
-
-        <div class="contact-info-container">
-          <div class="contact-info-inner">
-            <a href="mailto:kamil.rusniak01@gmail.com"
-              ><i class="far fa-envelope contact-info-icon"></i
-            ></a>
-            <a class="contact-info-text" href="mailto:kamil.rusniak01@gmail.com"
-              >kamil.rusniak01@gmail.com</a
-            >
+              <label for="message">Message</label>
+              <textarea
+                placeholder="..."
+                name="message"
+                id="message"
+              ></textarea>
+              <input type="submit" value="SUBMIT" />
+            </form>
           </div>
 
-          <div class="contact-info-inner">
-            <a
-              href="https://github.com/kamil-rusniak"
-              rel="noopener noreferrer"
-              target="_blank"
-              ><i class="fab fa-github contact-info-icon"></i
-            ></a>
-            <a
-              href="https://github.com/kamil-rusniak"
-              rel="noopener noreferrer"
-              target="_blank"
-              class="contact-info-text"
-              >github.com/kamil-rusniak</a
-            >
+          <div class="contact-info-container">
+            <div class="contact-info-inner">
+              <a href="mailto:kamil.rusniak01@gmail.com"
+                ><i class="far fa-envelope contact-info-icon"></i
+              ></a>
+              <a
+                class="contact-info-text"
+                href="mailto:kamil.rusniak01@gmail.com"
+                >kamil.rusniak01@gmail.com</a
+              >
+            </div>
+
+            <div class="contact-info-inner">
+              <a
+                href="https://github.com/kamil-rusniak"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-github contact-info-icon"></i
+              ></a>
+              <a
+                href="https://github.com/kamil-rusniak"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="contact-info-text"
+                >github.com/kamil-rusniak</a
+              >
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -210,6 +222,8 @@
     <script defer>
       var d = new Date();
       document.getElementById("data").innerHTML = d.getFullYear();
+
+
     </script>
   </body>
 </html>
