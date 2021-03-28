@@ -50,19 +50,24 @@
     </div>
 
     <div id="home-section">
-      <p>Hi, I'm Kamil Ruśniak</p>
+      <p>Hi, my name is Kamil Ruśniak and I'm a</p>
       <h1>Front End Web Developer</h1>
+      <p>
+        I specialize in turning ideas into high quality responsive websites that
+        can help your business grow and reach more clients.
+      </p>
+      <p>Good website is not a cost but an investment</p>
 
-      <p class="projects-text">Take a look at my projects</p>
-      <a class="arrow-button" href="#projects"
-        ><i class="far fa-arrow-alt-circle-down arrow-icon"></i
-      ></a>
+      <div class="home-buttons">
+        <a href="#contact" class="button button-cta">Contact me</a>
+
+        <a href="#projects" class="button button-cta">View my Work</a>
+      </div>
     </div>
 
     <div id="projects">
-
+      <h2 class="projects-header">My projects</h2>
       <div class="project-card">
-        
         <div class="project-card-img">
           <img
             class="img-hover-shadow"
@@ -73,35 +78,30 @@
 
         <div class="project-card-text">
           <h2>Example Web Solutions</h2>
-        <ul>
-          <li>
-            <a
-              href="https://web-services-concept.netlify.app"
-              rel="noopener noreferrer"
-              target="_blank"
-              class="button"
-              >WEBSITE</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/kamil-rusniak/Web-Services-Company-Concept"
-              rel="noopener noreferrer"
-              target="_blank"
-              class="button"
-              >CODE</a
-            >
-          </li>
-        </ul>
-
+          <ul>
+            <li>
+              <a
+                href="https://web-services-concept.netlify.app"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="button"
+                >WEBSITE</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/kamil-rusniak/Web-Services-Company-Concept"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="button"
+                >CODE</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-
-      </div>
-
-
 
       <div class="project-card">
-        
         <div class="project-card-text">
           <h2>FloRyś</h2>
           <ul>
@@ -124,19 +124,16 @@
               >
             </li>
           </ul>
+        </div>
 
+        <div class="project-card-img">
+          <img
+            src="img/preview-florist/previev-1-low.png"
+            alt="Preview of my website for local florist displayed on different devices"
+          />
+        </div>
       </div>
-
-      <div class="project-card-img">
-        <img
-          src="img/preview-florist/previev-1-low.png"
-          alt="Preview of my website for local florist displayed on different devices"
-        />
-      </div>
-
-      </div>
-
-     
+    </div>
 
     <div id="about">
       <h3>About me</h3>
@@ -226,8 +223,6 @@
     <script defer>
       var d = new Date();
       document.getElementById("data").innerHTML = d.getFullYear();
-
-
     </script>
   </body>
 </html>

@@ -52,35 +52,20 @@ ul {
 .bg-left {
   position: absolute;
   left: 0;
-  opacity: 0.4;
+  opacity: 0.3;
+  width: 25%;
 }
 
 .bg-right {
   position: absolute;
   right: 0;
-  opacity: 0.4;
+  opacity: 0.3;
+  width: 25%;
   transform: scaleX(-1);
 }
 
 .bg-center {
   display: none;
-}
-
-#home-section {
-  text-align: center;
-}
-
-#home-section p {
-  color: #fff;
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-#home-section h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-weight: 400;
 }
 
 #menuToggle {
@@ -125,6 +110,37 @@ ul {
   font-weight: 200;
 }
 
+#home-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#home-section p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+#home-section p:first-of-type {
+  margin-bottom: 0;
+}
+
+#home-section h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.home-buttons {
+  margin-top: 6rem;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   color: #e94560;
   padding: 0.25rem 2rem;
@@ -140,20 +156,30 @@ ul {
   border-color: #fff;
 }
 
+.button-cta {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 2px solid #fff;
+  padding: 1.4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-cta:first-of-type {
+  background-color: #e94560;
+}
+
+.button-cta:hover {
+  background-color: #fff;
+  color: #1a1a2e;
+}
+
 .projects-text {
   margin-top: 20rem;
-}
-
-.arrow-icon {
-  color: #e94560;
-  margin-top: 2rem;
-  font-size: 3rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.arrow-icon:hover {
-  transform: translateY(10px);
-  color: #fff;
 }
 
 h2 {
@@ -173,9 +199,15 @@ h3 {
 #projects {
   display: flex;
   flex-direction: column;
-  padding-top: 7rem;
+  padding: 10rem;
   justify-items: center;
-  margin: auto 2%;
+  align-items: center;
+  margin: 20rem 2% 0 2%;
+}
+
+#projects .projects-header {
+  color: white;
+  margin-bottom: -4rem;
 }
 
 .project-card {
@@ -183,8 +215,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-items: center;
-  margin: 0 auto;
-  margin-top: 8rem;
+  margin: 8rem auto 0rem auto;
   max-width: 1200px;
   background-color: #16213e;
   color: #fff;
@@ -364,8 +395,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #1a1a2e;
 }
 
 @media (max-width: 1400px) {
