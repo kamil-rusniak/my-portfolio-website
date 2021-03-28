@@ -290,10 +290,21 @@ h2 {
 .skill-container {
   display: grid;
   margin-top: 2rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   font-size: 6rem;
   gap: 5%;
   justify-items: center;
+
+  div{
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+  }
+
+  p{
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 
   img {
     height: 6rem;
