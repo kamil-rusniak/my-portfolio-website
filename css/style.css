@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   box-sizing: border-box;
   height: 100%;
-  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -83,7 +83,7 @@ ul {
 
 .navbar {
   overflow: hidden;
-  background-color: #16213e;
+  background-color: #1D1E2C;
   display: flex;
   justify-content: space-between;
   color: #e94560;
@@ -196,7 +196,7 @@ h2 {
 #projects {
   display: flex;
   flex-direction: column;
-  padding: 10rem;
+  padding: 10rem 2rem 10rem 2rem;
   justify-items: center;
   align-items: center;
   margin: 20rem 2% 0 2%;
@@ -213,29 +213,46 @@ h2 {
   align-items: center;
   justify-items: center;
   margin: 8rem auto 0rem auto;
-  max-width: 1200px;
-  background-color: #16213e;
+  background-color: #1D1E2C;
   color: #fff;
-  padding: 4rem 3rem;
   border: 0.2rem solid #e94560;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 80%;
+  max-width: 75rem;
+  overflow: auto;
+}
+
+.project-card-text:nth-of-type(odd) {
+  margin-left: 2rem;
+}
+
+.project-card-text:nth-of-type(even) {
+  margin-right: 2rem;
+}
+
+.project-card-text {
+  text-align: center;
+  width: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card-img {
+  margin: 1rem 1rem;
+  width: 40%;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card h2 {
   font-size: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   text-transform: none;
   font-weight: 400;
-}
-
-.project-card-text:nth-of-type(odd) {
-  text-align: center;
-  margin: 0 4rem 0 2rem;
-}
-
-.project-card-text:nth-of-type(even) {
-  text-align: center;
-  margin: 0 2rem 0 4rem;
 }
 
 .project-card a {
@@ -253,6 +270,7 @@ h2 {
 
 .project-card ul {
   display: flex;
+  justify-content: center;
 }
 
 .project-card li {
@@ -262,10 +280,6 @@ h2 {
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 9px 8px 7px 2px rgba(0, 0, 0, 0.3);
-}
-
-.project-card img {
-  max-width: 500px;
 }
 
 #about {
@@ -295,21 +309,12 @@ h2 {
   font-size: 1rem;
 }
 
-.skill-container img {
-  height: 6rem;
-  color: white;
-}
-
-.skill-container img:nth-of-type(3) {
-  padding: 0.4rem;
-}
-
 .contact {
   margin-top: 16rem;
   padding: 2.2rem 0;
   text-align: center;
   color: #fff;
-  background-color: #16213e;
+  background-color: #1D1E2C;
 }
 
 .contact-inner-container {
@@ -390,7 +395,7 @@ input[type="submit"] {
   border-radius: 2rem;
   padding: 0.4rem 2.3rem;
   font-weight: 300;
-  background-color: #16213e;
+  background-color: #1D1E2C;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -402,44 +407,66 @@ input[type="submit"]:hover {
   color: #1a1a2e;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .bg-left,
   .bg-right {
-    top: 8%;
+    top: 6%;
     width: 400px;
   }
-  .navbar ul > li {
-    margin-right: 1.7rem;
-  }
-}
-
-@media (max-width: 1000px) {
   .navbar {
     flex-direction: column;
   }
   .navbar ul {
-    margin-top: 1.4rem;
+    margin-top: 1.8rem;
     margin-bottom: 0.5rem;
   }
+  .navbar li {
+    margin: 0 1.5rem;
+  }
+  .navbar .invisible {
+    position: fixed;
+  }
+  #projects {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1000px) {
   .bg-left,
   .bg-right {
     opacity: 0.3;
     top: 6%;
   }
+  .navbar li {
+    margin: 0 1rem;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .project-card a {
+    font-size: 1rem;
+    border: 0.13rem solid white;
+  }
+  .project-card:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+  .project-card-text {
+    margin-bottom: 2rem;
+  }
+  .project-card-text:nth-of-type(odd) {
+    margin-left: 0;
+  }
+  .project-card-text:nth-of-type(even) {
+    margin-right: 0;
+  }
   .skill-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15%;
-  }
-  .skill-container img:nth-of-type(odd) {
-    justify-self: right;
-  }
-  .skill-container img:nth-of-type(even) {
-    justify-self: left;
-  }
-  .skill-container img:nth-of-type(5) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
+    gap: 1%;
   }
   .contact-inner-container {
     grid-template-columns: repeat(1, 1fr);
@@ -449,13 +476,6 @@ input[type="submit"]:hover {
   }
   .contact-info-container {
     margin-bottom: 2rem;
-  }
-  .project-card-inner {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .project-card-inner p {
-    padding: 0 8rem;
-    margin: 4rem 3% 0 3%;
   }
 }
 
@@ -524,7 +544,7 @@ input[type="submit"]:hover {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: #16213e;
+    background: #1D1E2C;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -554,7 +574,7 @@ input[type="submit"]:hover {
     width: 100%;
     top: 5%;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.3;
   }
   .mobile-navbar ul {
     flex-direction: column;
@@ -564,53 +584,15 @@ input[type="submit"]:hover {
   .mobile-navbar ul > li {
     margin: 1rem 0;
   }
-  .project-card-inner {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .project-card-inner p {
-    padding: 0 3rem;
-  }
-  .project-card-inner img {
-    max-width: 330px;
-  }
   .contact-form-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
     padding: 2rem 2rem;
   }
 }
 
 @media (max-width: 500px) {
-  .project-card-inner img {
-    max-width: 220px;
-  }
-  .project-card-inner p {
-    padding: 0;
-  }
-  .project-card ul > li {
-    margin: 0 0.5rem;
-  }
   #about {
     padding-top: 15rem;
     margin: 4rem 10% 4rem 10%;
-  }
-  .contact-form-container {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    border: none;
-  }
-  .contact-info-text {
-    display: none;
-  }
-  .contact-info-icon {
-    font-size: 3.7rem;
-  }
-  .contact-info-inner {
-    border-radius: 50%;
-    padding: 1.7rem;
   }
   #home-section p {
     font-size: 1.9rem;
@@ -619,6 +601,6 @@ input[type="submit"]:hover {
     font-size: 3.7rem;
   }
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
