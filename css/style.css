@@ -83,7 +83,7 @@ ul {
 
 .navbar {
   overflow: hidden;
-  background-color: #1D1E2C;
+  background-color: #1d1e2c;
   display: flex;
   justify-content: space-between;
   color: #e94560;
@@ -213,7 +213,7 @@ h2 {
   align-items: center;
   justify-items: center;
   margin: 8rem auto 0rem auto;
-  background-color: #1D1E2C;
+  background-color: #1d1e2c;
   color: #fff;
   border: 0.2rem solid #e94560;
   transition: all 0.3s ease-in-out;
@@ -314,7 +314,7 @@ h2 {
   padding: 2.2rem 0;
   text-align: center;
   color: #fff;
-  background-color: #1D1E2C;
+  background-color: #1d1e2c;
 }
 
 .contact-inner-container {
@@ -395,7 +395,7 @@ input[type="submit"] {
   border-radius: 2rem;
   padding: 0.4rem 2.3rem;
   font-weight: 300;
-  background-color: #1D1E2C;
+  background-color: #1d1e2c;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -542,7 +542,7 @@ input[type="submit"]:hover {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: #1D1E2C;
+    background: #1d1e2c;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
