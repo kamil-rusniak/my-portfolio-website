@@ -54,6 +54,7 @@ ul {
   left: 0;
   opacity: 0.3;
   width: 25%;
+  height: auto;
 }
 
 .bg-right {
@@ -62,6 +63,7 @@ ul {
   opacity: 0.3;
   width: 25%;
   transform: scaleX(-1);
+  height: auto;
 }
 
 .bg-center {
@@ -241,6 +243,7 @@ h2 {
 .project-card-img {
   margin: 1rem 1rem;
   width: 40%;
+  height: auto;
 }
 
 .project-card img {
