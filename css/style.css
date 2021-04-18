@@ -494,7 +494,8 @@ input[type="submit"] {
   transition: all 0.5s;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus {
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   background-color: #fff;
   color: #1a1a2e;
 }
@@ -680,22 +681,29 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 @media (max-width: 500px) {
-  .project-card {
-    width: 100%;
-  }
-  #about {
-    padding-top: 15rem;
-    margin: 4rem 10% 4rem 10%;
-  }
-  #home-section p {
-    font-size: 1.6rem;
+  #home-section p:first-of-type {
+    margin: 1rem 0;
+    font-size: 1.4rem;
   }
   #home-section h1 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
   #home-section a {
     font-size: 1.2rem;
     padding: 0.8rem 1.8rem;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .project-popup-content {
+    width: 300px;
+  }
+  .project-popup-content .exit-button {
+    font-size: 32px;
+  }
+  #about {
+    padding-top: 15rem;
+    margin: 4rem 10% 4rem 10%;
   }
   .contact-inner-container {
     margin-top: 5rem;
@@ -706,6 +714,6 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     font-size: 1.2rem;
   }
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
