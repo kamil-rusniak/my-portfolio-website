@@ -209,70 +209,6 @@ h2 {
   font-weight: 400;
 }
 
-.blur {
-  filter: blur(6px);
-  transition: all 0.3s linear;
-}
-
-.project-popup {
-  position: fixed;
-  display: none;
-  left: 0;
-  z-index: 100;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s linear;
-}
-
-.project-popup-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 300px;
-  background: #1d1e2c;
-  border: 1px solid #e94560;
-  text-align: center;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  transition: all 0.3s linear;
-}
-
-.project-popup-content p {
-  margin: auto;
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.project-popup-content .popup-icons {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-
-.project-popup-content .exit-button {
-  cursor: pointer;
-  background: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1d1e2c;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  top: -1rem;
-  right: -1rem;
-  transition: color 0.2s linear;
-}
-
-.project-popup-content .exit-button:hover {
-  color: #e94560;
-}
-
 #projects {
   display: flex;
   flex-direction: column;
@@ -303,19 +239,35 @@ h2 {
   overflow: auto;
 }
 
-.project-card-text:nth-of-type(odd) {
-  margin-left: 2rem;
-}
-
-.project-card-text:nth-of-type(even) {
-  margin-right: 2rem;
+.project-card h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .project-card-text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+.project-card-buttons li {
+  margin: 0 1rem;
+}
+
+.project-card-description {
+  width: 80%;
 }
 
 .project-card-img {
@@ -327,46 +279,6 @@ h2 {
 .project-card img {
   max-width: 100%;
   height: auto;
-}
-
-.project-card h2 {
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  text-transform: none;
-  font-weight: 400;
-}
-
-.project-card ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1rem 3rem 3rem;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.project-card li {
-  margin: 0 2rem;
-}
-
-.project-card li:nth-of-type(1) {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  justify-self: end;
-}
-
-.project-card li:nth-of-type(2) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-self: start;
-}
-
-.project-card li:nth-of-type(3) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  justify-self: center;
 }
 
 .project-card:hover {
@@ -394,6 +306,8 @@ h2 {
   display: flex;
   margin-top: 4rem;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-container p {
@@ -539,23 +453,20 @@ input[type="submit"]:focus {
   }
   .project-card h2 {
     font-size: 1.8rem;
-    margin-bottom: 3rem;
   }
   .project-card a {
     font-size: 1rem;
     border: 0.13rem solid white;
   }
-  .project-card:nth-of-type(even) {
-    flex-direction: column-reverse;
-  }
   .project-card-text {
     margin-bottom: 2rem;
+    width: 80%;
   }
-  .project-card-text:nth-of-type(odd) {
-    margin-left: 0;
+  .project-card-description {
+    width: 100%;
   }
-  .project-card-text:nth-of-type(even) {
-    margin-right: 0;
+  .project-card-img {
+    width: 50%;
   }
   .skill-container {
     grid-template-columns: repeat(2, 1fr);
@@ -571,6 +482,9 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 768px) {
+  #home-section {
+    margin: 0 1rem;
+  }
   #menuToggle {
     display: block;
     position: fixed;
@@ -675,6 +589,12 @@ input[type="submit"]:focus {
   .mobile-navbar ul > li {
     margin: 1rem 0;
   }
+  .project-card-img {
+    width: 60%;
+  }
+  .skill-container svg {
+    width: 70%;
+  }
   .contact-form-container {
     padding: 2rem 2rem;
   }
@@ -695,12 +615,6 @@ input[type="submit"]:focus {
   .project-card {
     width: 100%;
   }
-  .project-popup-content {
-    width: 300px;
-  }
-  .project-popup-content .exit-button {
-    font-size: 32px;
-  }
   #about {
     padding-top: 15rem;
     margin: 4rem 10% 4rem 10%;
@@ -712,6 +626,15 @@ input[type="submit"]:focus {
   }
   .contact-info-container a {
     font-size: 1.2rem;
+  }
+  .skill-container div {
+    margin-top: 2rem;
+  }
+  .skill-container p {
+    margin: 0;
+  }
+  .skill-container svg {
+    width: 50%;
   }
   html {
     font-size: 14px;
