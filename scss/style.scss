@@ -647,7 +647,7 @@ input[type="submit"]:focus {
 
   .project-card {
     &-img {
-      width: 60%;
+      width: 70%;
     }
   }
 
@@ -677,8 +677,12 @@ input[type="submit"]:focus {
     padding: 0.8rem 1.8rem;
   }
 
+
   .project-card {
     width: 100%;
+    &-img {
+      width: 80%;
+    }
   }
 
   #about {
@@ -697,6 +701,7 @@ input[type="submit"]:focus {
       font-size: 1.2rem;
     }
   }
+  
 
   .skill-container {
     div {
